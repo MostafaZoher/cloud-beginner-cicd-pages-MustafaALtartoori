@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Cursed Pipeline | CI/CD Horror</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="fog" aria-hidden="true"></div>
+
+  <main class="shell">
+    <header class="mast">
+      <div class="sigil" aria-hidden="true"></div>
+      <div>
+        <h1>The Cursed Pipeline</h1>
+        <p class="tag">CI/CD • GitHub Actions • GitHub Pages</p>
+      </div>
+    </header>
+
+    <section class="panel">
+      <h2>Student Info</h2>
+      <div class="grid">
+        <p><b>Name:</b> Mustafa ALtartoori</p>
+        <p><b>Course:</b> Cloud Computing</p>
+      </div>
+      <p class="hint">Tip: You can change the name/course anytime for the other student.</p>
+    </section>
+
+    <section class="panel">
+      <h2>What is CI/CD?</h2>
+      <p>
+        CI/CD stands for Continuous Integration and Continuous Delivery/Deployment.
+        Continuous Integration means merging code changes frequently and running automated checks to catch problems early.
+        Continuous Delivery/Deployment then automates packaging and releasing the validated code.
+        It reduces manual steps, lowers deployment risk, and helps teams ship updates faster.
+        In cloud systems, CI/CD is essential for reliable and repeatable releases.
+      </p>
+    </section>
+
+    <section class="panel">
+      <h2>My Pipeline</h2>
+      <p>
+        After I push to the main branch, GitHub Actions triggers a workflow automatically.
+        It checks that the required files exist, uploads the website files, then deploys them to GitHub Pages.
+        Once the workflow succeeds, the live site updates instantly with the new version.
+      </p>
+    </section>
+
+    <section class="panel ritual">
+      <h2>Ritual Console (JavaScript Interaction)</h2>
+
+      <div class="controls">
+        <button id="curseBtn">Awaken the Curse</button>
+        <button id="whisperBtn" class="ghost">Whisper Again</button>
+      </div>
+
+      <div class="terminal" role="status" aria-live="polite">
+        <div class="line"><span class="dot"></span> Status: <b id="statusText">Dormant</b></div>
+        <div class="line"><span class="dot"></span> Last Whisper: <b id="whisperText">—</b></div>
+        <div class="line"><span class="dot"></span> Pipeline Omen: <b id="omenText">Push → Run → Deploy</b></div>
+      </div>
+
+      <p class="footnote">
+        Demo idea for video: edit a sentence, commit + push, then refresh the live site to show the update.
+      </p>
+    </section>
+
+    <footer class="end">
+      <small>© The Cursed Pipeline — A static site deployed by automation.</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
